@@ -36,3 +36,5 @@ INSERT INTO `emp` VALUES ('1', 'aaa', 'bbb'), ('2', 'ccc', 'ddd'), ('3', 'eee', 
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+
