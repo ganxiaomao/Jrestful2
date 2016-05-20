@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jrestful.cms.mapper.emp.EmpMapper">
+	
+	<cache eviction="LRU" type="com.jrestful.cms.common.MybatisRedisCache" />
+	
+	<select id="getEmpUsePage" resultType="Emp">
+		SELECT id,name,sex FROM emp
+	</select>
+	<select id="getEmpsNoPage" resultType="Emp">
+		SELECT id,name,sex FROM emp
+	</select>
+</mapper>
